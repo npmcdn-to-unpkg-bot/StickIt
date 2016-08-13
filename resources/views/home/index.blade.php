@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-
+    @include('layouts.nav')
     <img src="/img/banner.png" style="width: 100%" alt="">
     <div class="m-b-3 container-fluid p-a-1 text-xs-center" style="background: #1D2127;color: white">
         Sign Up Now Its Totally Free <a href="{{ action('Auth\AuthController@showRegistrationForm') }}" class="btn btn-sm btn-primary">Sign Up</a>
