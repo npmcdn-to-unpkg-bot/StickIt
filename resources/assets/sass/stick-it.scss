@@ -1,0 +1,130 @@
+$brand-primary: #62a8ea !default;
+$brand-success: #46be8a !default;
+$brand-info: #57c7d4 !default;
+$brand-warning: #f2a654 !default;
+$brand-danger: #f96868 !default;
+$enable-flex: true !default;
+
+@import 'bower_components/tether/src/css/tether.sass';
+@import 'bower_components/bootstrap/scss/bootstrap.scss';
+@import 'bower_components/sweetalert/dev/sweetalert.scss';
+@import 'bower_components/font-awesome/scss/font-awesome.scss';
+@import "bower_components/awesome-bootstrap-checkbox/awesome-bootstrap-checkbox.scss";
+
+.btn-circle {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  padding: 6px 0;
+  font-size: 12px;
+  line-height: 1.428571429;
+  border-radius: 50%;
+}
+
+.btn-circle.btn-lg {
+  width: 50px;
+  height: 50px;
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.33;
+  border-radius: 50%;
+}
+
+.btn-circle.btn-xl {
+  width: 70px;
+  height: 70px;
+  padding: 10px 16px;
+  font-size: 24px;
+  line-height: 1.33;
+  border-radius: 50%;
+}
+
+.btn-circle.btn-2xl {
+  width: 100px;
+  height: 100px;
+  padding: 24px;
+  font-size: 18px;
+  line-height: 1.33;
+  border-radius: 50%;
+}
+
+.login-wrapper {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  align-items: center;
+  height: 100vh;
+  background: url("../../img/bg.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.list-group-item a {
+  color: #373a3c;
+}
+
+.radio label::before {
+  top: 50%;
+  margin-top: -9px;
+}
+
+.radio label::after {
+  top: 50%;
+  margin-top: -9px;
+}
+
+.checkbox label::before {
+  top: 50%;
+  margin-top: -9px;
+}
+
+.checkbox label::after {
+  top: 50%;
+  margin-top: -9px;
+}
+
+.nav-item.active {
+  border-bottom: 2px solid #62a8ea;
+}
+
+.nav-item.active .nav-link {
+  padding-top: .250rem;
+  padding-bottom: 0;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.loading {
+  display: none;
+}
+
+.settings-banner {
+  width: 100%;
+  height: 150px;
+  border-bottom: 1px solid #ddd;
+}
+
+.settings-header {
+  background: #1D2127;
+  color: white;
+}
+
+.note-page-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.note-wrapper {
+  margin-top: 110px;
+  z-index: 900;
+}
