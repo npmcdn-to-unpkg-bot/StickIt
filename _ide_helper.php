@@ -1,7 +1,7 @@
 <?php
 /**
  * A helper file for Laravel 5, to provide autocomplete information to your IDE
- * Generated for Laravel 5.2.43 on 2016-08-13.
+ * Generated for Laravel 5.2.43 on 2016-08-14.
  *
  * @author Barry vd. Heuvel <barryvdh@gmail.com>
  * @see https://github.com/barryvdh/laravel-ide-helper
@@ -12892,6 +12892,22 @@ namespace {
          */
         public static function cache($callback, $lifetime = null, $returnObj = false){
             return \Intervention\Image\ImageManager::cache($callback, $lifetime, $returnObj);
+        }
+        
+    }
+
+
+    class Recaptcha extends \Greggilbert\Recaptcha\Facades\Recaptcha{
+        
+        /**
+         * Render the recaptcha
+         *
+         * @param array $options
+         * @return \Greggilbert\Recaptcha\view 
+         * @static 
+         */
+        public static function render($options = array()){
+            return \Greggilbert\Recaptcha\Recaptcha::render($options);
         }
         
     }

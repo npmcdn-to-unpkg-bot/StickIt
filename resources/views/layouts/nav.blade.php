@@ -16,7 +16,7 @@
         @if(!Auth::check())
             <li class="nav-item dropdown">
                 <a href="{{ action('Auth\AuthController@showRegistrationForm') }}" class="btn btn-success">Sign Up</a>
-                <a href="{{ action('Auth\AuthController@showLoginForm') }}" class="btn btn-primary">Login</a>
+                <a href="{{ action('Auth\AuthController@showLoginForm') }}" class="btn btn-primary m-l-1">Login</a>
             </li>
         @else
             <li class="nav-item dropdown">

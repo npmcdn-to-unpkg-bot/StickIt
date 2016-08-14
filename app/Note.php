@@ -34,6 +34,7 @@ use Illuminate\Database\Eloquent\SoftDeletes;
  * @property-read mixed $can_share
  * @method static \Illuminate\Database\Query\Builder|\StickIt\Note whereColorId($value)
  * @property-read mixed $shared_note
+ * @property-read mixed $html_output
  */
 class Note extends Model
 {

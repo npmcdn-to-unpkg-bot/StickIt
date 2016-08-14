@@ -63,6 +63,12 @@
                             </div>
                         </div>
                         <div class="form-group row">
+                            <div class="col-xs-12 col-sm-6 offset-sm-3">
+                                {!! Recaptcha::render() !!}
+                            </div>
+
+                        </div>
+                        <div class="form-group row">
                             <div class="col-xs-8">
                                 <small>
                                     By registering you agree with our <a href="#" target="_blank"> Terms of Service</a> and <a href="#" target="_blank">Privacy Policy</a>

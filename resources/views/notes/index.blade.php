@@ -22,7 +22,7 @@
                     href="#" data-toggle="modal" data-target="#createNote"><u>Create New Note</u></a>
         </div>
         <div class="row">
-            <div class="col-xs-3 animated" v-for="note in notes | filterBy search" transition="notes">
+            <div class="col-xs-12 col-sm-3 animated" v-for="note in notes | filterBy search" transition="notes">
                 <div class="card"
                      v-bind:style="{ backgroundColor: note.color != null ? note.color.hex_color : 'white' }">
                     <div class="card-block">

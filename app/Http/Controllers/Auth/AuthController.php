@@ -52,9 +52,10 @@ class AuthController extends Controller
         $messages = ['password.regex' => "Your password must contain 1 lower case character, 1 upper case character, and one number"];
 
         return Validator::make($data, [
-            'name'     => 'required|max:50',
-            'email'    => 'required|email|max:255|unique:users',
-            'password' => 'required|confirmed|min:8|max:64|regex:/^(?=\S*[a-z])(?=\S*[A-Z])(?=\S*[\d])\S*$/',
+            'name'                 => 'required|max:50',
+            'email'                => 'required|email|max:255|unique:users',
+            'password'             => 'required|confirmed|min:8|max:64|regex:/^(?=\S*[a-z])(?=\S*[A-Z])(?=\S*[\d])\S*$/',
+            'g-recaptcha-response' => 'required|recaptcha',
         ], $messages);
     }
 
@@ -67,7 +68,7 @@ class AuthController extends Controller
     protected function create(array $data)
     {
         // Alert message for newly created user
-        alert()->success('We have created a few examples for you to play with. We hope you enjoy what our site has to offer. Enjoy!','Welcome '.$data['name'])->persistent('OK');
+        alert()->success('We have created a few examples for you to play with. We hope you enjoy what our site has to offer. Enjoy!', 'Welcome ' . $data['name'])->persistent('OK');
 
         return User::create([
             'name'     => $data['name'],

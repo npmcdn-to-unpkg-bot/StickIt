@@ -91,6 +91,8 @@ return [
     |
     */
 
+    "recaptcha" => 'The :attribute field is not correct.',
+
     'custom' => [
         'attribute-name' => [
             'rule-name' => 'custom-message',
