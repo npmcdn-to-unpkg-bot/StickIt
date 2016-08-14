@@ -51,7 +51,7 @@
                             <i class="fa fa-share-alt" v-show="note.shared_note"></i>
                             @{{ note.title }}
                         </h4>
-                        <div class="card-text" style="height: 170px;overflow: auto">@{{{ note.description }}}</div>
+                        <div class="card-text" style="height: 170px;overflow: auto">@{{{ note.html_output }}}</div>
                         <div class="card-text" style="min-height: 50px;">
                             <div v-show="note.updated_at != note.created_at">
                                 <small><i class="fa fa-clock-o"></i> Updated @{{ note.updated_at }}</small>

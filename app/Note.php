@@ -49,6 +49,7 @@ class Note extends Model
         'id',
         'title',
         'description',
+        'html_output',
         'color_id',
         'color',
         'can_edit',
@@ -68,6 +69,7 @@ class Note extends Model
     ];
 
     protected $appends = [
+        'html_output',
         'can_edit',
         'can_delete',
         'can_share',
@@ -174,13 +176,12 @@ class Note extends Model
     }
 
     /**
-     * Mutator to cleanse scripts and allow next line breaks for the description
-     * @param $value
+     * Mutator to display description in an html base output
      * @return string
      */
-    public function getDescriptionAttribute($value)
+    public function getHtmlOutputAttribute()
     {
-        return nl2br(e($value));
+        return nl2br(e($this->description));
     }
 
     public function setColorIdAttribute($value)
