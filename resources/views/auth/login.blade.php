@@ -6,7 +6,7 @@
             <div class="card" style="border: solid 1px #1D2127;">
                 <div class="card-header text-xs-center" style="background: #1D2127;">
                     <a href="/">
-                        <img src="../img/logo.png" alt="" style="width: 140px;">
+                        <img src="/img/logo.png" alt="" style="width: 140px;">
                     </a>
                 </div>
                 <div class="card-block p-b-0">

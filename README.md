@@ -11,6 +11,8 @@ This project includes some composer packages:
 - Laravel Sweet Alert 1.2 - https://github.com/uxweb/sweet-alert 
 - Laravel Collective 5.2.4 - https://github.com/laravelcollective/html
 - Intervention Image 2.3.7 - https://github.com/intervention/image
+- Bugsnag Laravel Package 2.2.0 - https://github.com/bugsnag/bugsnag-laravel
+- Laravel 5 reCAPTCHA Validator 2.1.1 - https://github.com/greggilbert/recaptcha
 
 This project includes some bower packages:
 
