@@ -44,7 +44,7 @@
                         <div class="checkbox abc-checkbox checkbox-primary" style="padding-top: .425rem">
                             {!! Form::checkbox('allow_modify','true',null,['v-model'=>'new_share.modify','class'=>'styled','id'=>'allow_modify']) !!}
                             <label for="allow_modify">
-                                Allow use to modify note
+                                Allow user to modify note
                             </label>
                         </div>
                     </div>
