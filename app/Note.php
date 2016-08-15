@@ -61,12 +61,14 @@ class Note extends Model
         'deleted_at',
         'updated_at',
         'share_users',
-        'shared_note'
+        'shared_note',
+        'owner'
     ];
 
     protected $with = [
+        'auth_user_share',
         'color',
-        'auth_user_share'
+        'owner'
     ];
 
     protected $appends = [
@@ -91,6 +93,15 @@ class Note extends Model
     public static function find($id, $columns = array('*'))
     {
         return parent::withTrashed()->find($id, $columns);
+    }
+
+    /**
+     * User Relationship
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
+     */
+    public function owner()
+    {
+        return $this->belongsTo(User::class,'user_id');
     }
 
     /**

@@ -57,8 +57,16 @@
                                 <small><i class="fa fa-clock-o"></i> Updated @{{ note.updated_at }}</small>
                             </div>
                             <div v-show="note.share_users.length">
-                                <small><i class="fa fa-share-alt"></i> @{{ note.share_users.length }}
-                                    Shared @{{ (note.share_users.length > 1) ? 'Users' : 'User' }}</small>
+                                <div v-show="note.shared_note">
+                                    <small><i class="fa fa-share-alt"></i> @{{ note.share_users.length }}
+                                        Shared @{{ (note.share_users.length > 1) ? 'Users' : 'User' }}</small>
+                                    <br>
+                                    <small><i class="fa fa-share-alt"></i> Shared by @{{ note.owner.name }}</small>
+                                </div>
+                                <div v-show="!note.shared_note">
+                                    <small><i class="fa fa-share-alt"></i> @{{ note.share_users.length }}
+                                        Shared @{{ (note.share_users.length > 1) ? 'Users' : 'User' }}</small>
+                                </div>
                             </div>
                         </div>
                     </div>
